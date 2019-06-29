@@ -63,13 +63,17 @@ function multiplyNums(x, y, cb) {
 function multiplies(num1, num2) {
   return num1 * num2
 }
-multiplyNums(5,5,multiplies)
+console.log(multiplyNums(5,5,multiplies))
 
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
+  return cb(list.includes(item))
 }
 
+contains('Pencil', items, (truthyOrFalsey) => {
+  console.log(truthyOrFalsey)
+})
 /* STRETCH PROBLEM */
 
 function removeDuplicates(array, cb) {
