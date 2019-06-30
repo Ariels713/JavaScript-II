@@ -80,4 +80,18 @@ function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
+  const newArray = []
+  array.forEach((items) => {
+    if(items === )
+  })
+  // array.forEach((item) => {
+  //   if(newArray.includes(array[i]) === false ) {
+  //     newArray.push(array[i])
+  //   }
+  // })
 }
+
+removeDuplicates(items, (banana) => {
+  return banana;
+})
+//Use Map to copy the array, forEach to itterate through the array, compare each element in the array 
