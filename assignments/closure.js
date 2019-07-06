@@ -1,10 +1,19 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
-const areWeThereYet = (timePassed, timeLeft = 600, callback) => {
-  let location =  'Unknown, GPS down'
-
+const multiplyBy = (multiplier) => {
+  return function(x){
+    return x * multiplier
+  }
 }
+
+let byTen = multiplyBy(10)
+let byFive = multiplyBy(5)
+let byThree = multiplyBy(3)
+console.log(byTen(50))
+console.log(byFive(60))
+console.log(byThree(1000))
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
