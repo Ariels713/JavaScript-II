@@ -1,27 +1,41 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
-const multiplyBy = (multiplier) => {
-  return function(x){
-    return x * multiplier
-  }
+const areWeThereYet = () => {
+  const ellie = 'Papa Are we there yet';
+  const papa = 'Almost bug, almost.';
+    console.log(`${ellie}`)
+    const iNeedClosure = () => {
+      //my first closure
+      console.log(`${ellie}? ${papa}`)
+
+      const iHave2Closures = () => {
+        //I have two Closures
+        console.log(`Papa papa ${ellie}!!!`)
+
+      }
+      iHave2Closures()
+    }
+
+    iNeedClosure()
+    console.log(papa)
 }
 
-let byTen = multiplyBy(10)
-let byFive = multiplyBy(5)
-let byThree = multiplyBy(3)
-console.log(byTen(50))
-console.log(byFive(60))
-console.log(byThree(1000))
-
+areWeThereYet()
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
 
 // ==== Challenge 2: Create a counter function ====
 const counter = () => {
-  // Return a function that when invoked increments and returns a counter variable.
-};
+  let counter = 0;
+  return function(){
+
+    return ++counter
+  }
+}
+counter()
+const newCounter = counter()//?
 // Example usage: const newCounter = counter();
 // newCounter(); // 1
 // newCounter(); // 2
