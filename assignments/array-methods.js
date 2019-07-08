@@ -100,6 +100,19 @@ const runningInOrder = runners.map((names)=> {
 runningInOrder.sort()
 
 // Problem 2
+// Grab all names and emails.  Organize in a seperate list. 
+const firstLastEmails = []
 
+runners.forEach((currentValue) => {
+  firstLastEmails.push(`${currentValue.first_name} ${currentValue.last_name}, ${currentValue.email}`)
+})
+firstLastEmails.sort()
+console.log(firstLastEmails)
 
 // Problem 3
+
+//Sort by company name, sort each name, capitalize all company names. 
+const listedCompanies = runners.map((currentValue) => {
+  return `${currentValue.company_name.toUpperCase()}`
+});
+listedCompanies.sort()//?
